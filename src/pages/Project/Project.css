@@ -1,0 +1,141 @@
+@keyframes fadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes titleFadeIn {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes imageFadeIn {
+    from {
+        transform: scale(0) rotate(-360deg);
+    }
+    to {
+        transform: scale(1) rotate(0);
+    }
+}
+
+@keyframes projectFadeIn {
+    from {
+        /* transform: scale(0.4);
+        height: 0; */
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        /* transform: scale(1);
+        height: 100%; */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.project-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.project-wrapper {    
+    position: relative;
+    max-width: var(--Max-Width);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.project-list {
+    display: none;
+    height: 55vh;
+    width: 100%;
+}
+
+.project-title,
+.project-main {
+    width: 50%;
+}
+
+.project-main {    
+    transform-origin: top;
+    animation: projectFadeIn 1s ease;
+}
+
+.project-name,
+.project-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-name {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin: 24px 0 12px 0;
+    animation: fadeIn 0.8s ease;
+}
+
+.project-desc {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    animation: fadeIn 1s ease;
+}
+
+.project-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 16px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: fadeIn 0.6s ease;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 4px 10px 4px 20px;
+    margin-top: 24px;
+    border-radius: 12px;
+    animation: fadeIn 1.2s ease;
+}
+
+.project-link:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.project-link img {
+    width: 32px;
+    height: 32px;
+}
+
+.project-main img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 3px solid var(--Base-White);
+    object-fit: cover;
+    box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+}
+
+.project-active {
+    display: flex;
+}
