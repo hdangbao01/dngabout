@@ -43,33 +43,45 @@ function HomePage() {
         <div className='home-container'>
             <div className="home-wrapper">
                 <div className='home-model'>
-                    <Canvas frameloop="demand" camera={{ position: [-2, 2, 10], fov: 45, near: 0.1, far: 200 }}>
-                        <ambientLight intensity={Math.PI / 2} />
-                        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
-                        <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-                        <OrbitControls />
-                        <Walle/>
-                    </Canvas>
+                    <div className='template-model'>
+                        <Canvas frameloop="demand" camera={{ position: [-2, 2, 10], fov: 45, near: 0.1, far: 200 }}>
+                            <ambientLight intensity={Math.PI / 2} />
+                            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
+                            <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
+                            <OrbitControls />
+                            <Walle/>
+                        </Canvas>
+                    </div>
+                    <img className='spot-model spot-1' src='/icons/draw.svg' />
+                    <img className='spot-model spot-2' src='/icons/about2.svg' />
+                    <div className='spot-model arrow-model spot-3'>
+                        <div>drag me</div>
+                        <img src='/icons/draw-arrow.svg' />
+                    </div>
+                    <img className='spot-model info-model spot-4' src='/icons/about.svg' />
                 </div>
                 <div className="left-home">
                     <div className="left-top">
                         Hi,
                     </div>
                     <div className="left-title">
-                        Wall-e
+                        I'm Bao
                     </div>
                     <div className="left-desc">
-                        Wall-e description
+                        Dng description
                     </div>
-                    <div className='tech-list'>
-                        <img className='tech-logo' src='/icons/icon-react.svg' />
-                        <img className='tech-logo' src='/icons/icon-vue.svg' />
-                        <img className='tech-logo' src='/icons/icon-threejs.svg' />
-                        <img className='tech-logo' src='/icons/icon-tailwind.svg' />
-                        <img className='tech-logo' src='/icons/icon-sass.svg' />
-                        <img className='tech-logo' src='/icons/icon-git.svg' />
-                        <img className='tech-logo' src='/icons/icon-postman.svg' />
-                        <img className='tech-logo' src='/icons/icon-blender.svg' />
+                    <div className='tech-wrapper'>
+                        <div className='tech-list'>
+                            <img className='tech-logo' src='/icons/icon-react.svg' />
+                            <img className='tech-logo' src='/icons/icon-vue.svg' />
+                            <img className='tech-logo' src='/icons/icon-threejs.svg' />
+                            <img className='tech-logo' src='/icons/icon-tailwind.svg' />
+                            <img className='tech-logo' src='/icons/icon-sass.svg' />
+                            <div className='tech-line'></div>
+                            <img className='tech-logo' src='/icons/icon-git.svg' />
+                            <img className='tech-logo postman' src='/icons/icon-postman.svg' />
+                            <img className='tech-logo' src='/icons/icon-blender.svg' />
+                        </div>
                     </div>
                     <div className="port-button">
                         Contact

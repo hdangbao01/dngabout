@@ -35,9 +35,9 @@ function Header() {
                 <img className='icon-logo' src='/icons/logo.svg' />
             </div>
             <div className='header-social'>
-                <img className='social-logo' src='/icons/facebook.svg' />
                 <img className='social-logo' src='/icons/github.svg' />
                 <img className='social-logo' src='/icons/linkedin.svg' />
+                <img className='social-logo' src='/icons/facebook.svg' />
             </div>
         </div>
     )

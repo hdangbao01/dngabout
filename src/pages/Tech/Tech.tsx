@@ -2,40 +2,37 @@ import './Tech.css'
 
 function Tech() {
     return (
-        <div className='contact-wrapper'>
-            <div className="contact-container">
-                <div className="contact-info">
-                    <div className="contact-item">
-                        <div className="contact-top">
-                            <div className="contact-btn">
-                                <img className='contact-logo' src='/icons/icon-phone.svg' />
-                            </div>
-                            <div className="footer-project-title">Phone</div>
+        <div className='skill-wrapper'>
+            <div className='skill-list'>
+                <div className="skill-item">
+                    <div className="skill-top">
+                        <div className="contact-btn">
+                        <img className='contact-logo' src='/icons/icon-dev.svg' />
                         </div>
-                        <div className="contact-desc">+84 123-123-1234</div>
+                        <div className="footer-project-title skill-title">VKU</div>
                     </div>
-                    <div className="contact-item">
-                        <div className="contact-top">
-                            <div className="contact-btn">
-                                <img className='contact-logo' src='/icons/icon-email.svg' />
-                            </div>
-                            <div className="footer-project-title">Email</div>
-                        </div>
-                        <div className="contact-desc">dng@gmail.com</div>
-                    </div>
-                    <div className="contact-item">
-                        <div className="contact-top">
-                            <div className="contact-btn">
-                                <img className='contact-logo' src='/icons/icon-address.svg' />
-                            </div>
-                            <div className="footer-project-title">Address</div>
-                        </div>
-                        <div className="contact-desc">Viet Nam</div>
-                    </div>
+                    <div className="skill-time">2019 - 2024</div>
+                    <div className="contact-desc skill-desc">University</div>
                 </div>
-
-                <div className="contact-highlight">
-                    Dng
+                <div className="skill-item">
+                    <div className="skill-top">
+                        <div className="contact-btn">
+                            <img className='contact-logo' src='/icons/icon-refact.svg' />
+                        </div>
+                        <div className="footer-project-title skill-title">Work</div>
+                    </div>
+                    <div className="skill-time">2024 - 2025</div>
+                    <div className="contact-desc skill-desc">Frontend Developer</div>
+                </div>
+                <div className="skill-item">
+                    <div className="skill-top">
+                        <div className="contact-btn">
+                            <img className='contact-logo' src='/icons/icon-option.svg' />
+                        </div>
+                        <div className="footer-project-title skill-title">Pending...</div>
+                    </div>
+                    <div className="skill-time">Now</div>
+                    <div className="contact-desc skill-desc">Pending...</div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,43 @@
+.skill-wrapper {
+    max-width: var(--Max-Width);
+    margin: 0 auto;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--Primary-Border);
+    border-bottom: 1px solid var(--Primary-Border);
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    transition: all .6s ease;
+}
+
+.skill-item:hover {
+    cursor: pointer;
+    background-color: var(--Primary-Bg);
+}
+
+.skill-item + .skill-item {
+    border-top: 1px solid var(--Primary-Border);
+}
+
+.skill-top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.skill-desc,
+.skill-top {
+    flex: 1;
+}
+
+.skill-desc {
+    display: flex;
+    justify-content: flex-end;
+}

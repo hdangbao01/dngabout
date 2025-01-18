@@ -1,7 +1,7 @@
 .contact-wrapper {
     width: 100%;
-    padding: 62px 0;
-    background-color: var(--Primary-Bg);
+    padding-top: 62px;
+    /* background-color: var(--Primary-Bg); */
 }
 
 .contact-container {
@@ -9,12 +9,12 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 62px;
 }
 
 .contact-info {
     display: flex;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid var(--Primary-Border);
 }
 
@@ -24,6 +24,12 @@
     flex-direction: column;
     gap: 24px;
     padding: 32px 48px;
+    transition: all .6s ease;
+}
+
+.contact-item:hover {
+    cursor: pointer;
+    background-color: var(--Primary-Bg);
 }
 
 .contact-item + .contact-item {
@@ -53,8 +59,83 @@
     transform: scale(1.1);
 }
 
+.contact-desc {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .contact-highlight {
-    padding: 80px 98px;
+    display: flex;
+    padding: 80px 100px;
     border-radius: 8px;
     background-color: var(--Primary-Active);
+    gap: 62px;
+}
+
+.contact-title,
+.contact-me {
+    flex: 1;
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 100%;
+    border-radius: 8px;;
+}
+
+.contact-button {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 14px 28px;
+    background-color: var(--Primary-50);
+    transition: all .2s ease;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+.input-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.input-label {
+    color: var(--Primary-50);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.textarea {
+    width: 100%;
+    color: var(--Primary-Text);
+    border: 1px solid var(--Primary-Border);
+    background-color: var(--Primary-50);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 8px 16px;
+    outline: none;
+    resize: none;
 }

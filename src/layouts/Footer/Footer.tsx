@@ -5,7 +5,19 @@ function Footer() {
         <div className='footer-wrapper'>
             <div className="footer-top">
                 <div className="footer-title">
-                    <p>Wall-e</p>
+                    <p>Bao Dng</p>
+                    <div className='footer-desc'>Dng description</div>
+                    <div className="footer-contact">
+                        <div className="footer-btn">
+                            <img className='footer-logo' src='/icons/btn-github.svg' />
+                        </div>
+                        <div className="footer-btn">
+                            <img className='footer-logo' src='/icons/btn-linkedin.svg' />
+                        </div>
+                        <div className="footer-btn">
+                            <img className='footer-logo' src='/icons/btn-facebook.svg' />
+                        </div>
+                    </div>
                 </div>
                 <div className="footer-project">
                     <div className="footer-project-title">
@@ -29,7 +41,7 @@ function Footer() {
                     </div>
                     <div className="footer-project-list">
                         <div className="footer-project-item">
-                            VKU Simulate
+                            VKU simulate
                         </div>
                         <div className="footer-project-item">
                             tasksilver
@@ -37,20 +49,15 @@ function Footer() {
                         <div className="footer-project-item">
                             glimpse
                         </div>
-                    </div>
-                </div>
-                <div className="footer-contact">
-                    <div className="footer-btn">
-                        <img className='footer-logo' src='/icons/btn-facebook.svg' />
-                    </div>
-                    <div className="footer-btn">
-                        <img className='footer-logo' src='/icons/btn-github.svg' />
+                        <div className="footer-project-item">
+                            Mock Project
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="footer-bottom">
                 <div className="footer-copyright">
-                    ©2025 walle
+                    ©2025 baodng
                 </div>
                 <div className="footer-view">
                     pending...
