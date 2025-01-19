@@ -21,23 +21,25 @@ function Header() {
     ]
 
     return (
-        <div className='header-wrapper'>
-            <div className='header-navbar'>
-                <ul className="nav-list">
-                {listNav.map((item, index) => <li className={`nav-item ${location.pathname === item.link && 'active'}`} key={index}>
-                    {/* <Link className={`nav-item ${location.pathname === item.link && 'active'}`} to={`${item.link}`}> */}
-                        {item.title}
-                    {/* </Link> */}
-                </li>)}
-                </ul>
-            </div>            
-            <div className='header-logo'>
-                <img className='icon-logo' src='/icons/logo.svg' />
-            </div>
-            <div className='header-social'>
-                <img className='social-logo' src='/icons/github.svg' />
-                <img className='social-logo' src='/icons/linkedin.svg' />
-                <img className='social-logo' src='/icons/facebook.svg' />
+        <div className="header-container header-active">
+            <div className='header-wrapper'>
+                <div className='header-navbar'>
+                    <ul className="nav-list">
+                    {listNav.map((item, index) => <li className={`nav-item ${location.pathname === item.link && 'active'}`} key={index}>
+                        {/* <Link className={`nav-item ${location.pathname === item.link && 'active'}`} to={`${item.link}`}> */}
+                            {item.title}
+                        {/* </Link> */}
+                    </li>)}
+                    </ul>
+                </div>            
+                <div className='header-logo'>
+                    <img className='icon-logo' src='/icons/logo.svg' />
+                </div>
+                <div className='header-social'>
+                    <img className='social-logo' src='/icons/github.svg' />
+                    <img className='social-logo' src='/icons/linkedin.svg' />
+                    <img className='social-logo' src='/icons/facebook.svg' />
+                </div>
             </div>
         </div>
     )

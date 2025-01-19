@@ -1,15 +1,27 @@
-.header-wrapper {
-    max-width: var(--Max-Width);
+.header-container {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
+}
+
+.header-wrapper {
+    max-width: var(--Max-Width);
     text-align: center;
     height: var(--Height-Header);
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+}
+
+.header-active {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--Primary-Border);
 }
 
 .icon-logo {
@@ -35,6 +47,11 @@
     text-decoration: none;
     color: var(--Gray-modern-900);
     font-weight: 500;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: var(--Primary-Active);
 }
 
 .active {

@@ -1,6 +1,6 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 :root {
     --Max-Width: 1200px;
