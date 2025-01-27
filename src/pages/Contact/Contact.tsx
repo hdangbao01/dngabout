@@ -40,7 +40,10 @@ function Contact() {
                             <div className="input-label">
                                 Send message
                             </div>
-                            <textarea rows={4} className='textarea' placeholder='Enter message...' />
+                            <input className='input' placeholder='Name...' />
+                        </div>
+                        <div className="input-field">
+                            <textarea rows={4} className='textarea' placeholder='Message...' />
                         </div>
                         <div className="contact-button">Send</div>
                     </div>  

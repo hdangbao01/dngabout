@@ -21,14 +21,14 @@ function Footer() {
                 </div>
                 <div className="footer-project">
                     <div className="footer-project-title">
-                        Page
+                        About
                     </div>
                     <div className="footer-project-list">
                         <div className="footer-project-item">
-                            Home
+                            Showcase
                         </div>
                         <div className="footer-project-item">
-                            Project
+                            Connect
                         </div>
                         <div className="footer-project-item">
                             Space
