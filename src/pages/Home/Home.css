@@ -53,34 +53,11 @@
 }
 
 .left-desc {
+    width: 80%;
     font-size: 16px;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 28px;
     margin: 24px 0;
-}
-
-.list-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-.list-item {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--Gray-modern-600);
-    padding: 4px 0;
-    padding-left: 16px;
-    border-left: 1px solid var(--Gray-modern-400);
-}
-
-.list-item:hover {
-    cursor: pointer;
-    color: var(--Primary-Active);
-}
-
-.list-item.item-active {
-    color: var(--Primary-Active);
-    border-left: 3px solid var(--Primary-Active);
 }
 
 .tech-wrapper {

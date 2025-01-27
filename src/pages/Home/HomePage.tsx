@@ -10,27 +10,24 @@ function Walle () {
     const chaRef = useRef()
     
     const walle = useGLTF('/models/robot.glb')
-    // const walle = useGLTF('/models/phihanhgia.gltf')
-    // const walle = useGLTF('/models/walle_2.glb')
 
     const gltfAnimations = walle.animations
-    const mixer = new AnimationMixer(walle.scene)
+    // const mixer = new AnimationMixer(walle.scene)
 
-    console.log('mixer', mixer);
-    console.log('gltfAnimations', gltfAnimations);
+    // console.log('mixer', mixer);
+    // console.log('gltfAnimations', gltfAnimations);
 
     const { actions } = useAnimations(gltfAnimations, chaRef)
 
     useFrame(() => {
         actions.Idle.play()
-
-        chaRef.current.rotation.y -= 0.002;
+        // chaRef.current.rotation.y -= 0.002;
     });
 
     // useEffect(() => {
     //     actions.Idle.play()
     //     chaRef.current.rotation.y -= 0.002;
-    // }, [actions])
+    // }, [])
 
     return (
         <mesh ref={chaRef}>
@@ -69,7 +66,8 @@ function HomePage() {
                         I'm Bao
                     </div>
                     <div className="left-desc">
-                        Dng description
+                    a frontend developer focused on creating thoughtful, optimized, and accessible websites.<br></br>
+                    I am always looking and loving simplicity, smoothness, and modernity in interface design and user experience.
                     </div>
                     <div className='tech-wrapper'>
                         <div className='tech-list'>
@@ -143,18 +141,9 @@ function HomePage() {
                         />
                     </div>
                     <div className="port-button">
-                        Contact
+                        About me
                     </div>
                 </div>
-                {/* <div className="right-home">
-                    <div className="right-title">
-                        <div className="list-nav">
-                            <div className="list-item item-active">Info</div>
-                            <div className="list-item">Character</div>
-                            <div className="list-item">Space</div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
     )
