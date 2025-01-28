@@ -6,7 +6,7 @@ function Footer() {
             <div className="footer-top">
                 <div className="footer-title">
                     <p>Bao Dng</p>
-                    <div className='footer-desc'>Dng description</div>
+                    <div className='footer-desc'>As a person who enjoys exploring and self-studying. I also have experience in building websites.</div>
                     <div className="footer-contact">
                         <div className="footer-btn">
                             <img className='footer-logo' src='/icons/btn-github.svg' />
@@ -41,16 +41,24 @@ function Footer() {
                     </div>
                     <div className="footer-project-list">
                         <div className="footer-project-item">
-                            VKU simulate
+                            <a href='https://vku.netlify.app/' target="_blank">
+                                VKU simulate
+                            </a>
                         </div>
                         <div className="footer-project-item">
-                            tasksilver
+                            <a href='https://tasksilver.netlify.app/' target="_blank">
+                                tasksilver
+                            </a>
                         </div>
                         <div className="footer-project-item">
-                            glimpse
+                            <a href='https://hdangbao01.github.io/glimpse-sn/index.html' target="_blank">
+                                glimpse
+                            </a>
                         </div>
                         <div className="footer-project-item">
-                            Mock Project
+                            <a href='https://mock-project.netlify.app/' target="_blank">
+                                Mock Project
+                            </a>
                         </div>
                     </div>
                 </div>

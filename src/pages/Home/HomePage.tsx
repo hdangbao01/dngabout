@@ -31,7 +31,7 @@ function Walle () {
 
     return (
         <mesh ref={chaRef}>
-            <primitive s object={walle.scene} position={[0, -2, 0]} />
+            <primitive object={walle.scene} position={[0, -2, 0]} scale={[1.2, 1.2, 1.2]} />
         </mesh>
     )
 }
@@ -46,7 +46,7 @@ function HomePage() {
                             <ambientLight intensity={Math.PI / 2} />
                             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
                             <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-                            <OrbitControls />
+                            <OrbitControls enableZoom={false} />
                             <Walle/>
                         </Canvas>
                     </div>
@@ -141,7 +141,7 @@ function HomePage() {
                         />
                     </div>
                     <div className="port-button">
-                        About me
+                        Discovery
                     </div>
                 </div>
             </div>

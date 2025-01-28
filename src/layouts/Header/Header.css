@@ -1,3 +1,12 @@
+@keyframes headerActive {
+    from {
+        border-width: 0px;
+    }
+    to {
+        border-width: 1px;
+    }
+}
+
 .header-container {
     width: 100%;
     position: fixed;
@@ -18,10 +27,12 @@
 }
 
 .header-active {
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--Primary-Border);
+    animation: headerActive 1s ease;
 }
 
 .header-logo {

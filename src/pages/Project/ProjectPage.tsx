@@ -12,21 +12,24 @@ function ProjectPage() {
             desc: 'a 3D website that simulates VKU, offering an interactive and immersive experience of school and classroom spaces. Users can explore the campus, join online classes and realtime, creating a refreshing and engaging learning environment.',
             img: '/src/assets/images/3d.jpg',
             icon: '/src/assets/images/three-js.png',
-            tech: ['ReactJS', 'ThreeJS', 'Firebase', 'Blender']
+            tech: ['ReactJS', 'ThreeJS', 'Firebase', 'Blender'],
+            link: 'https://vku.netlify.app/'
         },
         {
             name: 'tasksilver',
             desc: 'a modern platform that connects users with suitable domestic helpers in their area. Users can register to become helpers and manage their work directly on the platform. The system supports realtime chat, enabling seamless communication between employers and helpers.',
             img: '/src/assets/images/ta.jpg',
             icon: '/src/assets/images/tasksilver.png',
-            tech: ['ReactJS', 'Firebase']
+            tech: ['ReactJS', 'Firebase'],
+            link: 'https://tasksilver.netlify.app/'
         },
         {
             name: 'glimpse',
             desc: 'is a visual and creative platform where users can explore, save, and share unique image collections. The website allows users to effortlessly create personalized boards based on their favorite themes.',
             img: '/src/assets/images/pi.jpg',
             icon: '/src/assets/images/shortcut.png',
-            tech: ['HTML', 'CSS', 'Javascript']
+            tech: ['HTML', 'CSS', 'Javascript'],
+            link: 'https://hdangbao01.github.io/glimpse-sn/index.html'
         },
     ]
     
@@ -43,9 +46,11 @@ function ProjectPage() {
                         <div className="project-tech">
                             {item.tech.map((tech, index) => <div key={index} className='project-tech-item'>{tech}</div>)}
                         </div>
-                        <div className='project-link port-button'>
-                            View Project
-                        </div>
+                        <a href={item.link} target="_blank">
+                            <div className='project-link port-button'>                            
+                                    View Project
+                            </div>
+                        </a>
                     </div>
                     <div className="project-main">
                         <img src={item.img} />

@@ -79,12 +79,9 @@
 }
 
 .project-main {    
-    overflow: hidden;
     transform-origin: top;
-    animation: projectFadeIn 1s ease;
-    border-radius: 12px;
-    border: 3px solid var(--Base-White);
-    box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+    /* overflow: hidden;
+    animation: projectFadeIn 1s ease; */
 }
 
 /* .project-name,
@@ -152,6 +149,11 @@
     animation: fadeIn 1.2s ease;
 }
 
+.project-link a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 .project-link img {
     width: 32px;
     height: 32px;
@@ -162,7 +164,10 @@
     height: 100%;
     object-fit: cover;
     box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+    border-radius: 12px;
+    border: 3px solid var(--Base-White);
     animation: titleFadeIn 1s ease;
+    box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
 }
 
 /* .project-main img:hover {

@@ -1,27 +1,47 @@
-import { useLocation  } from "react-router-dom"
-
+// import { useLocation  } from "react-router-dom"
+import { useEffect, useState } from 'react'
 import './Header.css'
 
 function Header() {
-    const location = useLocation();
+    const [isMenu, setIsMenu] = useState(false)
+    const [offset, setOffset] = useState(0)
 
-    const listNav = [
-        {
-            title: 'Home',
-            link: '/',
-        },
-        {
-            title: 'Project',
-            link: '/project',
-        },
-        {
-            title: 'Space',
-            link: '/space',
-        },
-    ]
+    useEffect(() => {
+        const onScroll = () => setOffset(window.pageYOffset)
+
+        window.removeEventListener('scroll', onScroll)
+        window.addEventListener('scroll', onScroll, { passive: true })
+
+        return () => window.removeEventListener('scroll', onScroll)
+    }, [])
+    // Active Backgound Menu
+    useEffect(() => {
+        if (offset > 1) {
+            setIsMenu(true)
+        } else {
+            setIsMenu(false)
+        }
+    }, [offset]);
+
+    // const location = useLocation();
+
+    // const listNav = [
+    //     {
+    //         title: 'Home',
+    //         link: '/',
+    //     },
+    //     {
+    //         title: 'Project',
+    //         link: '/project',
+    //     },
+    //     {
+    //         title: 'Space',
+    //         link: '/space',
+    //     },
+    // ]
 
     return (
-        <div className="header-container header-active">
+        <div className={`header-container ${isMenu && 'header-active'}`}>
             <div className='header-wrapper'>
                 {/* <div className='header-navbar'>
                     <ul className="nav-list">
