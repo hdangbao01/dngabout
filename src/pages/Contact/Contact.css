@@ -9,7 +9,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 62px;
+    gap: 64px;
 }
 
 .contact-info {
@@ -141,4 +141,29 @@
     padding: 8px 16px;
     outline: none;
     resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        margin: 0 16px;
+    }
+
+    .contact-item + .contact-item {
+        border-left: none;
+        border-top: 1px solid var(--Primary-Border);
+    }
+
+    .contact-highlight {
+        flex-direction: column-reverse;
+        padding: 40px 16px;
+    }
+
+    .contact-wrapper {
+        padding-top: 40px;
+    }
+
+    .contact-container {
+        gap: 32px;
+    }
 }

@@ -1,4 +1,4 @@
-import DefaultLayout from "@/layouts/DefaultLayout/DefaultLayout"
+import DefaultLayout from "../layouts/DefaultLayout/DefaultLayout"
 // import HomePage from "@/pages/Home/HomePage"
 // import ProjectPage from "@/pages/Project/ProjectPage"
 

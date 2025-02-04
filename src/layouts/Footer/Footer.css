@@ -1,7 +1,7 @@
 .footer-wrapper {
     max-width: var(--Max-Width);
     margin: 0 auto;
-    padding: 62px 0;
+    padding: 64px 0;
 }
 
 .footer-top,
@@ -13,7 +13,7 @@
 .footer-top {
     border-bottom: 1px solid var(--Primary-Border);
     padding-bottom: 48px;
-    gap: 62px;
+    gap: 64px;
 }
 
 .footer-bottom {
@@ -100,4 +100,29 @@
 .footer-project-item:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer-wrapper {
+        width: 100%;
+        padding: 32px 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .footer-desc {
+        text-align: center;
+    }
+
+    .footer-title,
+    .footer-project,
+    .footer-project-list {
+        align-items: center;
+    }
 }

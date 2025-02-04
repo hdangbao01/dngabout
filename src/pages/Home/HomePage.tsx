@@ -1,13 +1,12 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
-import { AnimationMixer } from 'three';
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
 import './Home.css'
 
 function Walle () {
-    const chaRef = useRef()
+    const chaRef = useRef(null)
     
     const walle = useGLTF('/models/robot.glb')
 
@@ -20,7 +19,7 @@ function Walle () {
     const { actions } = useAnimations(gltfAnimations, chaRef)
 
     useFrame(() => {
-        actions.Idle.play()
+        actions?.Idle?.play()
         // chaRef.current.rotation.y -= 0.002;
     });
 
@@ -141,7 +140,7 @@ function HomePage() {
                         />
                     </div>
                     <div className="port-button">
-                        Discovery
+                        About me
                     </div>
                 </div>
             </div>

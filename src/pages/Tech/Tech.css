@@ -41,3 +41,29 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media only screen and (max-width: 1200px) {
+    .skill-wrapper {
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-wrapper {
+        padding: 80px 16px;
+    }
+
+    .skill-item {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skill-time {
+        margin: 8px 0 16px 0;
+    }
+
+    .skill-top {
+        gap: 12px;
+    }
+}

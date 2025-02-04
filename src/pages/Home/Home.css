@@ -166,3 +166,40 @@
     top: 0;
     left: 0;
 }
+
+@media only screen and (max-width: 1200px) {
+    .home-wrapper {
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-wrapper {
+        padding: 80px 16px 40px 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* .home-model {
+        display: none;
+    } */
+
+    .left-home {
+        align-items: center;
+        z-index: 1;
+    }
+
+    .tech-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-wrapper {
+        padding: 0 48px;
+    }
+
+    .spot-model {
+        display: none;
+    }
+}

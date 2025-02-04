@@ -1,32 +1,36 @@
 import { useRef, useEffect } from 'react'
 
-import { IProject } from '@/types/project'
+import { IProject } from '../../types/project'
 
 import './Navbar.css'
 
 interface NavbarProps {
     listProject: IProject[],
-    setProjectDetail: React.Dispatch<any>
+    setProjectDetail: React.Dispatch<React.SetStateAction<IProject>>
 }
 
 const Navbar = ({listProject, setProjectDetail}: NavbarProps) => {
-    const navSlide: React.MutableRefObject<null> = useRef(null);
-    const navList: React.MutableRefObject<null> = useRef(null);
+    const navSlide = useRef<HTMLDivElement>(null);
+    const navList: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
 
-    const showProjectDetail = (e: any, item: IProject) => {
-        const element = e.target;
+    const showProjectDetail = (e: React.MouseEvent<HTMLDivElement>, item: IProject) => {
+        const element = e.target as HTMLDivElement;
         setProjectDetail(item);
-        navSlide.current.style.left = `${element.offsetLeft}px`;
-        navSlide.current.style.width = `${element.offsetWidth}px`;
+        if (navSlide.current) {
+            navSlide.current.style.left = `${element.offsetLeft}px`;
+            navSlide.current.style.width = `${element.offsetWidth}px`;
+        }
     }
 
 
     useEffect(() => {
         if (!navList.current) return;
 
-        const firstItem = navList.current.children[0];
-        navSlide.current.style.left = `${firstItem.offsetLeft}px`;
-        navSlide.current.style.width = `${firstItem.offsetWidth}px`;
+        const firstItem = navList.current.children[0] as HTMLElement;
+        if (navSlide.current) {
+            navSlide.current.style.left = `${firstItem.offsetLeft}px`;
+            navSlide.current.style.width = `${firstItem.offsetWidth}px`;
+        }
     }, [navList])
 
     return (

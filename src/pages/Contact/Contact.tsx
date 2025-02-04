@@ -48,7 +48,7 @@ function Contact() {
                         <div className="contact-button">Send</div>
                     </div>  
                     <div className="contact-me">
-                        <img className='contact-img' src='/src/assets/images/dng2.jpg' />
+                        <img className='contact-img' src='/images/dng2.jpg' />
                     </div>                  
                 </div>
             </div>

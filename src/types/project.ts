@@ -3,4 +3,6 @@ export interface IProject {
     desc: string;
     img: string;
     icon: string;
+    tech: Array<string>,
+    link: string
 }
