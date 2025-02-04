@@ -9,6 +9,7 @@ import Tech from "../../pages/Tech/Tech"
 import Footer from "../Footer/Footer"
 
 function DefaultLayout() {
+
     return (
         <div className='default-layout'>
             <Header />
