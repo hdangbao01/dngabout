@@ -178,12 +178,12 @@
     .home-wrapper {
         padding: 80px 16px 40px 16px;
         flex-direction: column;
-        gap: 16px;
+        gap: 0;
     }
 
-    /* .home-model {
-        display: none;
-    } */
+    .home-model {
+        width: 100%;
+    }
 
     .left-home {
         align-items: center;
@@ -201,5 +201,10 @@
 
     .spot-model {
         display: none;
+    }
+
+    .left-desc {
+        text-align: center;
+        margin: 0 0 24px 0;
     }
 }
